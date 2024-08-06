@@ -1,7 +1,7 @@
 # jms10-instrumentation
 
-build wih maven: mvn clean install
-run with example: -javaagent:/Users/davidhope/Downloads/opentelemetry-javaagent.jar
+- build wih maven: mvn clean install
+- run with example: -javaagent:/Users/davidhope/Downloads/opentelemetry-javaagent.jar
 -Dotel.resource.attributes=service.name=JMSSender,service.version=0.0.1,deployment.environment=production
 -Dotel.exporter.otlp.endpoint=
 -Dotel.exporter.otlp.headers=
