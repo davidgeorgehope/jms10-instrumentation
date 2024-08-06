@@ -52,8 +52,6 @@ public class QueueSendAdvice {
             span2 = tracer.spanBuilder("Start JMS Application").setSpanKind(SpanKind.INTERNAL).startSpan();
             scope = span2.makeCurrent();
         }
-
-        try {
             Context parentContext = Context.current();
             span = tracer.spanBuilder("JMS Send")
                     .setSpanKind(SpanKind.PRODUCER)
@@ -67,18 +65,13 @@ public class QueueSendAdvice {
             Context context = parentContext.with(span);
             GlobalOpenTelemetry.get().getPropagators().getTextMapPropagator().inject(context, input, SETTER);
 
-            scope.close();
-            span2.end();
-            return span.makeCurrent();
-
-        } finally {
             if (scope != null) {
                 scope.close();
             }
             if (span2 != null) {
                 span2.end();
             }
-        }
+            return span.makeCurrent();
     }
 
         @Advice.OnMethodExit(onThrowable = Throwable.class, suppress = Throwable.class)

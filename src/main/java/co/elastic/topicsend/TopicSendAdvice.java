@@ -52,7 +52,6 @@ public class TopicSendAdvice {
                 scope = span2.makeCurrent();
             }
 
-            try {
                 Context parentContext = Context.current();
 
                 span = tracer.spanBuilder("JMS Send")
@@ -66,17 +65,14 @@ public class TopicSendAdvice {
 
                 Context context = parentContext.with(span);
                 GlobalOpenTelemetry.get().getPropagators().getTextMapPropagator().inject(context, input, SETTER);
-                scope.close();
-                span2.end();
-                return span.makeCurrent();
-            } finally {
                 if (scope != null) {
                     scope.close();
                 }
                 if (span2 != null) {
                     span2.end();
                 }
-            }
+                return span.makeCurrent();
+
 
         }
 
