@@ -1,0 +1,11 @@
+/Users/davidhope/IdeaProjects/jms10-instrumentation/src/main/java/co/elastic/queuesend/QueueSendAdvice.java
+/Users/davidhope/IdeaProjects/jms10-instrumentation/src/main/java/co/elastic/queuesend/QueueSendInstrumentation.java
+/Users/davidhope/IdeaProjects/jms10-instrumentation/src/main/java/co/elastic/queuesend/QueueSendInstrumentationModule.java
+/Users/davidhope/IdeaProjects/jms10-instrumentation/src/main/java/co/elastic/queuesend/ReflectiveTextMapSetter.java
+/Users/davidhope/IdeaProjects/jms10-instrumentation/src/main/java/co/elastic/receive/ReceiveAdvice.java
+/Users/davidhope/IdeaProjects/jms10-instrumentation/src/main/java/co/elastic/receive/ReceiveInstrumentation.java
+/Users/davidhope/IdeaProjects/jms10-instrumentation/src/main/java/co/elastic/receive/ReceiveInstrumentationModule.java
+/Users/davidhope/IdeaProjects/jms10-instrumentation/src/main/java/co/elastic/receive/ReflectiveTextMapGetter.java
+/Users/davidhope/IdeaProjects/jms10-instrumentation/src/main/java/co/elastic/topicsend/TopicSendAdvice.java
+/Users/davidhope/IdeaProjects/jms10-instrumentation/src/main/java/co/elastic/topicsend/TopicSendInstrumentation.java
+/Users/davidhope/IdeaProjects/jms10-instrumentation/src/main/java/co/elastic/topicsend/TopicSendInstrumentationModule.java

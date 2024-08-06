@@ -1,0 +1,12 @@
+co/elastic/receive/ReceiveAdvice.class
+co/elastic/queuesend/QueueSendAdvice.class
+co/elastic/receive/ReceiveInstrumentationModule.class
+co/elastic/queuesend/QueueSendInstrumentation.class
+META-INF/services/io.opentelemetry.javaagent.extension.instrumentation.InstrumentationModule
+co/elastic/receive/ReflectiveTextMapGetter.class
+co/elastic/topicsend/TopicSendInstrumentationModule.class
+co/elastic/receive/ReceiveInstrumentation.class
+co/elastic/topicsend/TopicSendAdvice.class
+co/elastic/topicsend/TopicSendInstrumentation.class
+co/elastic/queuesend/ReflectiveTextMapSetter.class
+co/elastic/queuesend/QueueSendInstrumentationModule.class
