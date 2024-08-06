@@ -1,4 +1,4 @@
-# jms10-instrumentation
+# JMS v1.0 OpenTelemetry Instrumentation for Older Apps
 
 - built with the JMS 1.0 API Spec: https://docs.oracle.com/cd/E17802_01/products/products/jms/javadoc-102a/index.html
 - build wih maven: mvn clean install
